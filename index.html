@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,176 @@
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <h1>HII</h1>
-    
+    <h1>JAVASCRIPT CONDITIONAL STATEMENTS</h1>
+    <p>Conditional statements are used to decide the flow of execution based on different conditions. If a condition is
+        true, you can perform one action and if the condition is false, you can perform another action.</p>
+
+    <ol>
+        There are mainly four types of conditional statements in JavaScript.
+        <li>If statement</li>
+        <li>If…Else statement</li>
+        <li>If…Else If…Else statement</li>
+        <li>Switch statement</li>
+    </ol>
+
+    <div>
+        <div>
+            <h3>1. If Statement : </h3>
+            <p>You can use If statement if you want to check only a specific condition.</p>
+            <b>Syntax:</b>
+            <pre>
+        if(condition)
+            {
+                (statements...............)
+            }
+        </pre>
+        </div>
+
+        <div>
+            <h3>2. If...Else Statement : </h3>
+            <p>You can use If….Else statement if you have to check two conditions and execute a different set of codes.
+            </p>
+            <b>Syntax:</b>
+            <pre>
+        if(condition)
+            {
+                (statements...............)
+            }
+        else
+            {
+                (statements...............)
+            }   
+        </pre>
+        </div>
+
+        <div>
+            <h3>3. If…Else If…Else statement : </h3>
+            <p>You can use If….Else If….Else statement if you want to check more than two conditions.</p>
+            <b>Syntax:</b>
+            <pre>
+        if(condition)
+            {
+                (statements...............)
+            }
+        else if(condition)
+            {
+                (statements...............)
+            }   
+        else
+            {
+                (statements...............)
+            }
+        </pre>
+        </div>
+
+        <div>
+            <h3>4. Switch statement : </h3>
+            <p>The switch statement evaluates an expression, matching the expression's value to a case clause, and
+                executes statements associated with that case, as well as statements in cases that follow the matching
+                case.</p>
+            <b>Syntax:</b>
+            <pre>
+                switch (expression) {
+                    case value1:
+                      //Statements executed when the
+                      //result of expression matches value1
+                      [break;]
+                    case value2:
+                      //Statements executed when the
+                      //result of expression matches value2
+                      [break;]
+                    ...
+                    case valueN:
+                      //Statements executed when the
+                      //result of expression matches valueN
+                      [break;]
+                    [default:
+                      //Statements executed when none of
+                      //the values match the value of the expression
+                      [break;]]
+                  }
+        </pre>
+        </div>
+    </div>
+
+
+    <h2>
+        Q.1 : Take a string variable age <br>
+        a) if age less than 30 , print "Adult" , else "Old", use if else and ternary operator <br>
+        b) if age less than 15 , print ""Young"" , age greater than 15 but less than 30 print "Adult" else "Old" by
+        using if else ladder
+    </h2>
+    <div class="Answer">
+        <pre>
+        <b>//Using ternary operator</b>
+            var age = 25;
+            var output = (age<30)? "Adult": "Old";
+            console.log(output)
+
+            //Output: Adult
+        </pre>
+
+        <pre>
+        <b>//Using if....else condition</b>
+            var age = 30;
+            if(age<30){
+                console.log("Adult")
+            }
+            else{
+                console.log("Old")
+            }
+
+            //Output: Old
+            </pre>
+    </div>
+
+    <h2> Q 2 : Use switch case and create Week calendar Monday - print 0 , Tuesday - print 1 and so on Sunday - print 6</h2>
+    <div class="Answer">
+    <pre>
+            
+    <b>//Switch Case</b>
+    var day = "wednesday"
+    switch (day) {
+
+        case "monday":
+            console.log(0);
+            break;
+
+        case "tuesday":
+            console.log(1);
+            break;
+                
+        case "wednesday":
+            console.log(2);
+            break;
+
+        case "thursday":
+            console.log(3);
+            break;
+                
+        case "friday":
+            console.log(4);
+            break;
+
+        case "saturday":
+            console.log(5);
+            break;
+
+        case "sunday":
+            console.log(6);
+            break;
+
+        default:
+            console.log("Invalid day");
+            break;
+    }
+    </pre>
+
+    </div>
+
     <script src="./index.js"></script>
 </body>
+
 </html>
